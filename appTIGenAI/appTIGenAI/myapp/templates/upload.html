@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Image Upload</title>
+</head>
+
+<body>
+    <h1>Upload an Image</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+    </form>
+    <br><br>    
+
+    {% load static %}
+    <script type = "application/javascript" src = "{% static 'js/jquery-3.6.0.min.js' %}"></script>    
+
+    <h3>List of Images</h3>
+
+    <div id="image-container">
+        <table>
+            <thead>
+                <tr>
+                    <th><p style = "text-align: center;">Images</p></th>
+                    <th>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
+                    <th><p style = "text-align: center;">Captions</p></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for url, caption in image_data %}                
+                    <tr>
+                        <td><img src="{% static 'images/'|add:url %}" width="384" height = "256"> <br><br> </td>
+                        <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
+                        <td><p style = "text-align: center;">{{caption}}</p></td>
+                    </tr>
+                {% endfor %}
+            </tbody>            
+        </table>
+    </div>
+    <br><br>
+
+    <script type = "application/javascript" src = "{% static 'js/upload.js' %}"></script>    
+
+</body>
+</html>

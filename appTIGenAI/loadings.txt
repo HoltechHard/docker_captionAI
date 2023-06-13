@@ -1,0 +1,117 @@
+press ctrl + C to interrupt the server
+
+=========================
+#   List of commands    #
+=========================
+
+> pip install django
+
+> django-admin startproject appTIGenAI
+
+> cd appTIGenAI
+
+> python manage.py startapp myapp
+
+# to load the main page 
+localhost:8000
+
+# apply the migrations for the apps 
+> python manage.py migrate
+
+# for creation of database
+> python manage.py makemigrations
+
+# after the creation of the database, run again
+> python manage.py migrate
+
+# how to run the webpage
+> python manage.py runserver
+
+# command line in linux to show tree structure of files
+$ tree -d /proc/self/
+
+# command line in windows to show tree structure of files
+> tree /a /f > tree.txt
+
+
+=========================
+# install command lines #
+=========================
+
+# install pytorch
+
+> conda install pytorch torchvision cudatoolkit=10.1 -c pytorch -c nvidia
+
+# install torchvision
+
+$ pip install torchvision
+
+$ pip show torchvision
+Name: torchvision
+Version: 0.4.1a0+7b6d991
+
+# install transformers
+
+$ pip install transformers
+
+$ pip show transformers
+
+$ pip install tensorflow
+
+$ pip install keras
+
+versions of packages
+
+$ pip list
+
+
+keras                   2.12.0
+jupyter-client          6.1.12
+numpy                   1.21.1
+pandas                  1.3.0
+pip                     23.1.2
+torch                   1.11.0+cu113
+torchvision             0.12.0+cu113
+tensorflow              2.12.0
+tensorboard             2.5.0
+transformers            4.29.2
+
+
+=====================
+#   Root generated  #
+=====================
+
+appTIGenAI/
+├── myapp/
+│   ├── migrations/
+│   ├── templates/
+│   │   └── upload.html
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── forms.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+└── appTIGenAI/
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+
+
+=============================
+#    donwload dataset       #
+=============================
+
+$ wget http://images.cocodataset.org/zips/train2017.zip
+
+$ wget http://images.cocodataset.org/zips/val2017.zip
+
+$ wget http://images.cocodataset.org/zips/test2017.zip
+
+$ wget http://images.cocodataset.org/annotations/annotations_trainval2017.zip
+
+$ wget http://images.cocodataset.org/annotations/stuff_annotations_trainval2017.zip
+
+

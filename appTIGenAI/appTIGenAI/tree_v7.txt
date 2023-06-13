@@ -1,0 +1,83 @@
+Folder PATH listing for volume Nuevo vol
+Volume serial number is 0F65-5C81
+D:.
+|   db.sqlite3
+|   manage.py
+|   tree_v7.txt
+|   
++---appTIGenAI
+|   |   asgi.py
+|   |   settings.py
+|   |   urls.py
+|   |   wsgi.py
+|   |   __init__.py
+|   |   
+|   \---__pycache__
+|           settings.cpython-39.pyc
+|           urls.cpython-39.pyc
+|           wsgi.cpython-39.pyc
+|           __init__.cpython-39.pyc
+|           
++---myapp
+|   |   admin.py
+|   |   apps.py
+|   |   forms.py
+|   |   models.py
+|   |   predictions.py
+|   |   tests.py
+|   |   views.py
+|   |   __init__.py
+|   |   
+|   +---migrations
+|   |   |   0001_initial.py
+|   |   |   0002_alter_image_image.py
+|   |   |   0003_alter_image_image.py
+|   |   |   __init__.py
+|   |   |   
+|   |   \---__pycache__
+|   |           0001_initial.cpython-39.pyc
+|   |           0002_alter_image_image.cpython-39.pyc
+|   |           0003_alter_image_image.cpython-39.pyc
+|   |           __init__.cpython-39.pyc
+|   |           
+|   +---templates
+|   |       home.html
+|   |       upload.html
+|   |       
+|   \---__pycache__
+|           admin.cpython-39.pyc
+|           apps.cpython-39.pyc
+|           forms.cpython-39.pyc
+|           models.cpython-39.pyc
+|           predictions.cpython-39.pyc
+|           views.cpython-39.pyc
+|           __init__.cpython-39.pyc
+|           
+\---static
+    +---images
+    |       airport.jpg
+    |       cellphone.jpg
+    |       futbol.jpg
+    |       guitar.jpg
+    |       jiraffes.jpg
+    |       messi.jpg
+    |       sleep.jpg
+    |       surfing.jpg
+    |       tenis.jpg
+    |       toothbrush.jpg
+    |       
+    +---js
+    |       jquery-3.6.0.min.js
+    |       upload.js
+    |       
+    \---vit-gpt-model
+            config.json
+            generation_config.json
+            merges.txt
+            preprocessor_config.json
+            pytorch_model.bin
+            special_tokens_map.json
+            tokenizer.json
+            tokenizer_config.json
+            vocab.json
+            
